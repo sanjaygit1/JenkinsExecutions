@@ -40,6 +40,8 @@ public class BaseClass {
 		
 		File_Utility flib = new File_Utility();
 		String BROWSER = flib.getKeyAndValuePair("Browser");
+	
+		//Reading Data from cmd/ Jenkins
 //		String BROWSER = System.getProperty("browser");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
@@ -70,7 +72,7 @@ public class BaseClass {
 		String USERNAME = file.getKeyAndValuePair("username");
 		String PASSWORD = file.getKeyAndValuePair("password");
 
-		//reading url,username,password values from cmd line
+		//reading url,username,password values from cmd line/Jenkins
 //		String URL = System.getProperty("url");
 //	    String USERNAME = System.getProperty("username");
 //		String PASSWORD = System.getProperty("password");
